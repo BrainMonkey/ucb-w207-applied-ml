@@ -20,5 +20,5 @@ docker-build:
 
 .PHONY: run-local
 run-local:
-	@docker run -it --rm -p 10000:8888 -p 8080:8080 -v "${PWD}":/home/jovyan/work ${NAME}
+	@docker run -it --rm -p 8888:8888 -p 8080:8080 -v "${PWD}":/home/jovyan/work ${NAME}
 
